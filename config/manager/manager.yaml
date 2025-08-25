@@ -38,7 +38,7 @@ spec:
           - --zap-log-level=4
         image: ghcr.io/open-component-model/ocm-k8s-toolkit:local
         name: manager
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 9090
             name: http
